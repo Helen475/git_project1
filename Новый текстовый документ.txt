@@ -1,0 +1,8 @@
+UPDATE coffe SET volume = 500 WHERE id = 1;
+UPDATE coffe SET volume = 500 WHERE id = 2;
+UPDATE coffe SET taste = 'насыщенный' WHERE id = 1;
+UPDATE coffe SET taste = 'мягкий' WHERE id = 2;
+UPDATE coffe SET type = 'зерновой' WHERE id = 1;
+UPDATE coffe SET type = 'зерновой' WHERE id = 2;
+UPDATE coffe SET roasting = 'слабая' WHERE id = 1;
+SELECT * FROM coffe
