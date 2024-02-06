@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>808</width>
-    <height>513</height>
+    <height>507</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -27,20 +27,15 @@
      <string>добавить</string>
     </property>
    </widget>
-   <widget class="QTableWidget" name="tableWidget">
+   <widget class="QTableWidget" name="tableWidget1">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
       <width>801</width>
-      <height>111</height>
+      <height>91</height>
      </rect>
     </property>
-    <row>
-     <property name="text">
-      <string/>
-     </property>
-    </row>
     <row>
      <property name="text">
       <string>новая запись</string>
@@ -49,51 +44,6 @@
     <column>
      <property name="text">
       <string>id</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>название сорта</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>степень обжарки</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>молотый/в зернах</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>описание вкуса</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>цена</string>
-     </property>
-    </column>
-    <column>
-     <property name="text">
-      <string>объем упаковки</string>
-     </property>
-    </column>
-   </widget>
-   <widget class="QTableWidget" name="tableWidget_2">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>170</y>
-      <width>791</width>
-      <height>251</height>
-     </rect>
-    </property>
-    <column>
-     <property name="text">
-      <string>ID</string>
      </property>
     </column>
     <column>
@@ -151,6 +101,39 @@
     </property>
     <property name="text">
      <string>обновить</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>791</width>
+      <height>181</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>791</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>791</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>загрузить</string>
     </property>
    </widget>
   </widget>
