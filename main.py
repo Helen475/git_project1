@@ -3,12 +3,16 @@ import sys
 
 from PyQt5 import uic
 from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidgetItem
+from main_ui import Ui_MainWindow
+from addEditCoffeeForm_ui import Ui_MainWindow1
 
 
-class MyWidget(QMainWindow):
+class MyWidget(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('main.ui', self)
+        '''uic.loadUi('main.ui', self)'''
+        self.setupUi(self)
+
         self.con = sqlite3.connect("coffee.db")
         cur = self.con.cursor()
         result = cur.execute("""SELECT * FROM coffe """).fetchall()
@@ -43,10 +47,11 @@ class MyWidget(QMainWindow):
         self.modified = {}
 
 
-class MyForm2(QMainWindow):
+class MyForm2(QMainWindow, Ui_MainWindow1):
     def __init__(self):
         super().__init__()
-        uic.loadUi('addEditCoffeeForm.ui', self)
+        '''uic.loadUi('addEditCoffeeForm.ui', self)'''
+        self.setupUi1(self)
         self.con = sqlite3.connect("coffee.db")
 
         self.tableWidget.itemChanged.connect(self.item_changed)
