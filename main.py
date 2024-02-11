@@ -13,7 +13,7 @@ class MyWidget(QMainWindow, Ui_MainWindow):
         '''uic.loadUi('main.ui', self)'''
         self.setupUi(self)
 
-        self.con = sqlite3.connect("coffee.db")
+        self.con = sqlite3.connect("data/coffee.db")
         cur = self.con.cursor()
         result = cur.execute("""SELECT * FROM coffe """).fetchall()
         # Заполнили размеры таблицы
@@ -52,7 +52,7 @@ class MyForm2(QMainWindow, Ui_MainWindow1):
         super().__init__()
         '''uic.loadUi('addEditCoffeeForm.ui', self)'''
         self.setupUi1(self)
-        self.con = sqlite3.connect("coffee.db")
+        self.con = sqlite3.connect("data/coffee.db")
 
         self.tableWidget.itemChanged.connect(self.item_changed)
         self.pushButton_2.clicked.connect(self.save_results)

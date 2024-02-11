@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>728</width>
+    <height>376</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>711</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>название сорта</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>степень обжарки</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>молотый/в зернах</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>описание вкуса</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>цена</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>объем упаковки</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>711</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>редактировать</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>711</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>обновить</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>728</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
